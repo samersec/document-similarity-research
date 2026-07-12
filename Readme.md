@@ -54,4 +54,25 @@ n'étant lancée avant validation du choix de méthode (fin de Phase 7).
 - Documentation technique de l'architecture et des choix de conception
 - Support de présentation de fin de stage
 
+## Structure du dépôt
 
+```
+.
+├── README.md
+├── docs/
+│   ├── etat-de-l-art.md
+│   ├── decisions-techniques.md
+│   ├── protocole-experimental.md
+│   ├── journal-recherche.md
+│   └── comptes-rendus/
+├── notebooks/
+├── datasets/
+│   └── corpus-synthetique/
+├── src/
+└── .gitignore
+```
+
+## Suivi
+
+Points d'avancement hebdomadaires. Voir `docs/comptes-rendus/` pour l'historique
+et `docs/journal-recherche.md` pour le détail des séances de travail.
