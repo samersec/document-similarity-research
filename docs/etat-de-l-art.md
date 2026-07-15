@@ -51,3 +51,31 @@ titres, correction orthographique).
 un signe de meilleure performance — c'est un artefact du comptage au niveau
 caractère (chevauchements fortuits), sans réelle interprétabilité. Non
 recommandé pour la comparaison de documents entiers.
+
+## MinHash / k-shingling
+
+**Principe** : estimation rapide du score de Jaccard sur des k-shingles
+(séquences de k mots consécutifs) via des signatures de hachage compactes,
+sans comparer les ensembles complets.
+
+**Complexité** : O(n) pour la génération de signature, comparaison de
+signatures quasi instantanée — conçu pour la scalabilité (grands volumes de
+documents).
+
+**Avantages** : capture l'ordre des mots (contrairement à Jaccard classique),
+scalable à grande échelle, mémoire réduite.
+
+**Limites** :
+- Résultat approché, pas exact
+- Très sévère sur la paraphrase (score plus bas encore que Jaccard classique)
+- Complexité de mise en œuvre supérieure (choix de k, nombre de permutations)
+
+**Résultat empirique** :
+| Cas de test | Score |
+|---|---|
+| Document QHSE réel vs sa reformulation (k=2) | 3,12 % |
+
+**Conclusion** : confirme et amplifie la limite des méthodes lexicales face
+à la paraphrase. Utile pour la détection de quasi-duplication à grande
+échelle (ex. déduplication de masse), pas pour évaluer une similarité de
+sens.
