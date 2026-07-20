@@ -49,19 +49,8 @@ Garder un peu de Jaccard dans le mélange, c'est garder :
   (vocabulaire très technique, sigle spécifique au métier), l'autre méthode
   peut rattraper le coup
 
-## Où on en est, honnêtement
-
-On comprend le principe, on a vu un exemple de calcul avec nos vrais
-résultats — mais rien n'est encore choisi. On n'a pas encore décidé quelles
-méthodes combiner, ni quel poids leur donner, et on n'a testé ça que sur une
-seule paire de documents, pas un vrai corpus. Ce travail de calibration,
-c'est pour plus tard (Phase 4-5), une fois qu'on aura un corpus plus large
-pour vraiment juger ce qui fonctionne.
-
 ## Ce qu'il faut retenir
 
 L'hybride n'est pas une nouvelle méthode à tester comme les autres — c'est
 plutôt une façon de **combiner intelligemment** ce qu'on a déjà appris des
-autres familles. Et c'est justement la piste que le cahier des charges
-suggère de creuser en priorité — ce qui tombe bien, puisque c'est aussi
-celle qui a le plus de sens au vu de tout ce qu'on a observé jusqu'ici.
+autres familles.
