@@ -72,7 +72,3 @@ n'étant lancée avant validation du choix de méthode (fin de Phase 7).
 └── .gitignore
 ```
 
-## Suivi
-
-Points d'avancement hebdomadaires. Voir `docs/comptes-rendus/` pour l'historique
-et `docs/journal-recherche.md` pour le détail des séances de travail.
